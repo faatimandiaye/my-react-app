@@ -12,8 +12,13 @@ html {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+ .profile-img {
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit: cover;
+  display: block;
+}
 }
 
 #root{
@@ -444,4 +449,18 @@ footer{
   .contact-container h2 {
     font-size: 24px;
   }
+}
+.fatima-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;   /* TRÈS IMPORTANT */
+  object-position: center; /* centre le visage */
+  display: block;
+}
+.fatima-img {
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
 }

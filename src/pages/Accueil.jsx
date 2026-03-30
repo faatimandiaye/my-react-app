@@ -8,7 +8,7 @@ function Accueil() {
   return (
     <>
       <section className="hero" id="home">
-        <img src={photo} alt="Fatimatou" className="fatima-img" />
+        <img src={photo} alt="Fatimatou" className="profile-img" />
         <h1>Bonjour, je suis <span>Fatimatou Ndiaye</span></h1>
         <p className="subtitle">Développeuse Web & Mobile</p>
         <div className="hero-buttons">

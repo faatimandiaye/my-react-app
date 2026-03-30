@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -8,6 +10,7 @@ import Accueil from './pages/Accueil';
 import About from './pages/About';
 import Projects from "./pages/Projects";
 import Contact from './pages/Contact';
+
 
 const App = () => {
     return (
