@@ -9,13 +9,13 @@ function Projects() {
       title: "Mini Market",
       description: "Application avec React et Laravel",
       image: projet1,
-      link: "https://github.com/faatimandiaye/mini-market"
+      link: "https://github.com/faatimandiaye/my-react-app.git"
     },
     {
       title: "Portfolio",
       description: "Mon site portfolio moderne avec React",
       image: projet2,
-      link: "https://github.com/faatimandiaye/mini-market-portfolio"
+      link: "https://github.com/faatimandiaye/my-react-app.git"
     },
     {
       title: "Gestion des tâches",
