@@ -28,7 +28,7 @@ function About() {
             <div className="progress">
               <div className="progress-bar html"></div>
             </div>
-            <span>80%</span>
+            <span>85%</span>
           </div>
 
           <div className="skill">
@@ -36,7 +36,7 @@ function About() {
             <div className="progress">
               <div className="progress-bar react"></div>
             </div>
-            <span>50%</span>
+            <span>60%</span>
           </div>
 
           <div className="skill">
@@ -44,7 +44,7 @@ function About() {
             <div className="progress">
               <div className="progress-bar js"></div>
             </div>
-            <span>10%</span>
+            <span>15%</span>
           </div>
 
           <div className="skill">
@@ -52,7 +52,7 @@ function About() {
             <div className="progress">
               <div className="progress-bar laravel"></div>
             </div>
-            <span>75%</span>
+            <span>80%</span>
           </div>
 
           <div className="skill">

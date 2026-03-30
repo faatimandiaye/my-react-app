@@ -1,60 +1,77 @@
 /* RESET */
-*{
-  
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-img {
- .profile-img {
-  width:160px;
-  height:160px;
-  border-radius:50%;
-  object-fit: cover;
-  display: block;
-}
-}
-
-#root{
+#root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 /* NAVBAR */
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 40px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 40px;
   background: linear-gradient(135deg, #7c3aed, #db2777);
-  position:sticky;
-  top:0;
-  z-index:1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.logo{
-  color:white;
-  font-size:24px;
-  font-weight:bold;
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.menu a{
-  margin:0 15px;
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-  transition:0.3s;
+/* HAMBURGER — caché sur desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
 }
 
-.menu a:hover{
-  color:#f9a8d4;
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #f9a8d4;
 }
 
 /* HERO */
@@ -67,27 +84,29 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding:20px;
+  padding: 20px;
 }
 
-.hero span{
+.hero span {
   color: #f472b6;
 }
 
-.subtitle{
-  margin-top:10px;
-  font-size:18px;
-  opacity:0.9;
+.subtitle {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.9;
   color: #c4b5fd;
 }
 
 .profile-img {
-  width:160px;
-  height:160px;
-  border-radius:50%;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-bottom:20px;
-  border:4px solid #a855f7;
+  object-position: center;
+  display: block;
+  margin-bottom: 20px;
+  border: 4px solid #a855f7;
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
   transition: transform 0.3s;
 }
@@ -100,7 +119,8 @@ img {
   margin-top: 20px;
 }
 
-.btn, .btn-outline {
+.btn,
+.btn-outline {
   transition: all 0.3s ease;
 }
 
@@ -108,13 +128,13 @@ img {
   background: linear-gradient(135deg, #7c3aed, #db2777);
   color: white;
   padding: 10px 20px;
-  margin:5px;
+  margin: 5px;
   border-radius: 5px;
   text-decoration: none;
 }
 
-.btn:hover{
-  transform:scale(1.05);
+.btn:hover {
+  transform: scale(1.05);
   box-shadow: 0 5px 20px rgba(168, 85, 247, 0.5);
 }
 
@@ -123,13 +143,13 @@ img {
   color: #a855f7;
   padding: 10px 20px;
   border-radius: 5px;
-  border:2px solid #a855f7;
+  border: 2px solid #a855f7;
   text-decoration: none;
 }
 
-.btn-outline:hover{
+.btn-outline:hover {
   background: #a855f7;
-  color:white;
+  color: white;
 }
 
 /* ABOUT */
@@ -150,6 +170,7 @@ img {
   width: 160px;
   height: 160px;
   object-fit: cover;
+  object-position: center;
   border-radius: 50%;
   margin-bottom: 20px;
   border: 4px solid #a855f7;
@@ -194,7 +215,7 @@ img {
 .progress {
   width: 100%;
   height: 8px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -205,12 +226,12 @@ img {
   border-radius: 10px;
 }
 
-/* niveaux */
-.html { width: 80%; }
-.react { width: 50%; }
-.js { width: 60%; }
+/* Niveaux de compétences */
+.html    { width: 80%; }
+.react   { width: 50%; }
+.js      { width: 60%; }
 .laravel { width: 75%; }
-.php { width: 60%; }
+.php     { width: 60%; }
 
 /* PROJECTS */
 .projects {
@@ -228,7 +249,7 @@ img {
 }
 
 .project-card {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(168, 85, 247, 0.3);
   padding: 20px;
   border-radius: 15px;
@@ -305,13 +326,13 @@ img {
   border: none;
   border-radius: 5px;
   outline: none;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   color: white;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .contact-form input:focus,
@@ -358,46 +379,59 @@ img {
 }
 
 /* FOOTER */
-footer{
+footer {
   margin-top: auto;
   background: #0d0d1a;
   color: #c4b5fd;
-  text-align:center;
-  padding:20px;
+  text-align: center;
+  padding: 20px;
   border-top: 1px solid rgba(168, 85, 247, 0.3);
 }
 
-/* ANIMATION */
-.hero h1{
-  animation:fadeIn 1s ease-in-out;
+/* ANIMATIONS */
+.hero h1 {
+  animation: fadeIn 1s ease-in-out;
 }
 
-.hero p{
-  animation:fadeIn 1.5s ease-in-out;
+.hero p {
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-@keyframes fadeIn{
-  from{
-    opacity:0;
-    transform:translateY(20px);
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  to{
-    opacity:1;
-    transform:translateY(0);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE — TABLETTE */
 @media (max-width: 768px) {
 
   .navbar {
-    flex-direction: column;
-    gap: 10px;
+    padding: 15px 20px;
   }
 
+  /* Hamburger visible sur mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Menu caché par défaut sur mobile */
   .menu {
+    display: none;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Menu visible quand ouvert */
+  .menu.open {
+    display: flex;
   }
 
   .menu a {
@@ -440,7 +474,7 @@ footer{
   }
 }
 
-/* PETIT MOBILE */
+/* RESPONSIVE — PETIT MOBILE */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 22px;
@@ -449,18 +483,4 @@ footer{
   .contact-container h2 {
     font-size: 24px;
   }
-}
-.fatima-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;   /* TRÈS IMPORTANT */
-  object-position: center; /* centre le visage */
-  display: block;
-}
-.fatima-img {
-  width: 160px !important;
-  height: 160px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
 }
