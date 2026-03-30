@@ -1,8 +1,5 @@
 import React from 'react';
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './index.css';
@@ -11,6 +8,8 @@ import About from './pages/About';
 import Projects from "./pages/Projects";
 import Contact from './pages/Contact';
 import Detail from './pages/Detail';
+
+
 
 
 const App = () => {
@@ -22,9 +21,7 @@ const App = () => {
                 <Route path="/" element={<Accueil />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-                 <Route path="/" element={<Projects />} />
-                <Route path="/projects/:id" element={<Detail />} />
+                <Route path="/detail/:id" element={<Detail />} />
             </Routes>
 
             <Footer />
