@@ -11,12 +11,13 @@ function About() {
           <h1>QUI SUIS-JE ?</h1>
 
           <h2>
-            Je suis Fatimatou Ndiaye, apprenante en Développement Web et Mobile.
+            Je suis Fatimatou Ndiaye, apprenante en Développement Web et Mobile,
           </h2>
 
           <p>
-            Je crée des projets avec React et Laravel.
-            J’aime concevoir des interfaces simples, rapides et efficaces.
+            passionnée par la création d’applications et de sites performants,
+            et en pleine montée en compétences sur les technologies du web (PHP, Laravel, JavaScript, etc.).
+            Je suis motivée à apprendre et à contribuer à des projets innovants.
           </p>
         </div>
 
