@@ -16,7 +16,7 @@ function About() {
 
           <p>
             passionnée par la création d’applications et de sites performants,
-            et en pleine montée en compétences sur les technologies du web (PHP, Laravel, JavaScript, etc.).
+            et en pleine montée en compétences sur les technologies du web (PHP, Laravel, JavaScript, React, etc.).
             Je suis motivée à apprendre et à contribuer à des projets innovants.
           </p>
         </div>
