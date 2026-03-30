@@ -5,25 +5,31 @@ import projet1 from "../assets/photo1.jpg"
 function Projects() {
 
   const projects = [
-    {
-      title: "Mini Market",
-      description: "Application avec React et Laravel",
-      image: projet1,
-      link: "https://github.com/faatimandiaye/my-react-app.git"
-    },
-    {
-      title: "Portfolio",
-      description: "Mon site portfolio moderne avec React",
-      image: projet2,
-      link: "https://github.com/faatimandiaye/my-react-app.git"
-    },
-    {
-      title: "Gestion des tâches",
-      description: "Application React",
-      image: projet3,
-      link: "#"
-    }
-  ]
+  {
+    id: 1,
+    title: "Mini Market",
+    description: "Application avec React et Laravel",
+    image: projet1,
+    github: "https://github.com/faatimandiaye/my-react-app.git",
+    site: "#"
+  },
+  {
+    id: 2,
+    title: "Portfolio",
+    description: "Mon site portfolio moderne avec React",
+    image: projet2,
+    github: "https://github.com/faatimandiaye/my-react-app.git",
+    site: "#"
+  },
+  {
+    id: 3,
+    title: "Gestion des tâches",
+    description: "Application React",
+    image: projet3,
+    github: "#",
+    site: "#"
+  }
+];
 
   return (
     <section className="projects">
