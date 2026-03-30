@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 import About from "./About"       
 import Projects from "./Projects"
 import Contact from "./Contact"
-import photo from "../assets/photo.jpg"
+import photo from "../assets/fa.jpg"
 
 function Accueil() {
   return (
